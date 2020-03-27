@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="css/animate.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <title>Daniel Portfolio</title>
+  <title>Nascimento Portfolio</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
         <ul>
           <li><a href="#about">about me</a></li>
           <li><a href="#skills">skills</a></li>
-          <li><a href="#work">mywork</a></li>
+          <li><a href="#work">my work</a></li>
         </ul>
       </nav>
     </header>
@@ -59,7 +59,7 @@
         <span class="m-left">.</span>
       </h1>
       <p>Css / JavaScript / C# csharp</p>
-      <a href="contact">contact me</a>
+      <a href="#contact">contact me</a>
     </div>
     <div class="profile-image">
       <img src="img/profile-image.png" alt="">
@@ -153,11 +153,11 @@
     <div class="container contact" id="contact">
       <h1>Contact</h1>
       <form>
-        <input type="text" name="name" placeholder="Full Name">
-        <input type="email" placeholder="Email">
-        <input type="email" placeholder="daniel.rn@live.com" disabled>
-        <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-        <input type="submit">
+        <input id="fullName" type="text" name="name" placeholder="Full Name">
+        <input id="email" type="email" placeholder="Email">
+        <input id="emailDest" type="email" placeholder="daniel.rn@live.com" disabled>
+        <textarea id="msg" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+        <input type="submit" onclick="enviarEmailContato(this); return false">
       </form>
     </div>
 

@@ -23,8 +23,8 @@ const scene = new ScrollMagic.Scene({
     triggerElement: '.skills',
     triggerHook: 0
 })
-.setTween(t1)
-.addTo(contoller)
+    .setTween(t1)
+    .addTo(contoller)
 
 
 const showRequiredCategory = event => {
@@ -49,4 +49,18 @@ const showRequiredCategory = event => {
     getCategory.classList.remove('hideCategory')
     getCategory.classList.add('showCategory')
 }
+
+function enviarEmailContato(event) {
+
+    let fullName = document.getElementById("fullName").value;
+    let email = document.getElementById("email").value;
+    let emailDest = "daniel.rn@live.com";
+    let msg = document.getElementById("msg").value;
+
+    var link = 'mailto:' + emailDest + '?subject=Message from '
+        + email + '&body=' + fullName + ' ' + msg;
+
+    window.location.href = link;
+}
+
 
